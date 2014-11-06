@@ -12,7 +12,6 @@ namespace Game1.view
         private const int sizeOfTile = 64;
         private const int borderSize = 64;
         private model.GameModel model;
-        private static int frame = 640;
         private float scale;
         private int levelWidth;
         private int levelHeight;
@@ -76,8 +75,8 @@ namespace Game1.view
             this.width = width;
             this.height = height;
 
-            int scaleX = (width - frame * 2) / levelWidth;
-            int scaleY = (height - frame * 2) / levelHeight;
+            int scaleX = (width - borderSize * 2) / levelWidth;
+            int scaleY = (height - borderSize * 2) / levelHeight;
 
             scale = scaleX;
             if (scaleY < scaleX)
@@ -85,7 +84,7 @@ namespace Game1.view
                 scale = scaleY;
             }
 
-            // resultat för uppgift 3 är -130.
+            // resultat för uppgift 3 är 16.
         }
 
 
