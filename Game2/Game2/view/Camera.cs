@@ -14,18 +14,19 @@ namespace Game2.view
         private float scale;
         private float scaleX;
         private float scaleY;
-        private model.BallModel model;
-        private static int frame = 1;
+        private static int frame = 12;
+
     
 
         public Camera(Viewport port)
         {
-            model = new BallModel();
-            scaleX = port.Width / model.LogicalX;
-            scaleY = port.Height / model.LogicalY;
+            scaleX = port.Width - frame * 2;
+            scaleY = port.Height - frame * 2;
+
+           
 
             scale = scaleX;
-            if (scaleY < scaleX)    
+            if (scaleY < scaleX)   
             {
                 scale = scaleY;
             }
@@ -35,8 +36,6 @@ namespace Game2.view
         {
             return scale;
         }
-
-
 
         internal float toViewX(float x)
         {
@@ -48,5 +47,10 @@ namespace Game2.view
             return y * scale + frame;
         }
 
+
+        internal int getFrame()
+        {
+            return frame;
+        }
     }
 }

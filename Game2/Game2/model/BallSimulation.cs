@@ -10,15 +10,14 @@ namespace Game2.model
     class BallSimulation
     {
         BallModel ballModel;
-        private Viewport viewport;
+        private float width = 1.0f;
+        private float height = 1.0f;
 
 
 
-        public BallSimulation(Viewport viewport)
+        public BallSimulation()
         {
-            // TODO: Complete member initialization
-            this.viewport = viewport;
-
+           
             ballModel = new BallModel();
 
 
@@ -30,15 +29,12 @@ namespace Game2.model
             float elapsedTimeSeconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
             ballModel.XPosition = ballModel.XPosition + ballModel.speedX * elapsedTimeSeconds;
 
-           // int windowsWidth = viewport.Width;
-           // int windowsHeight = viewport.Height;
-
-            if (ballModel.XPosition + ballModel.diameter/2 > 1.0f)
+            if (ballModel.XPosition + ballModel.diameter/2 > width)
             {
                 ballModel.speedX = ballModel.speedX * -1.0f;
             }
 
-            if (ballModel.XPosition - ballModel.diameter/2 < 0)
+            if (ballModel.XPosition - ballModel.diameter/2 < 0.0f)
             {
                 ballModel.speedX = ballModel.speedX * -1.0f;
             }
@@ -47,12 +43,12 @@ namespace Game2.model
             ballModel.YPosition = ballModel.YPosition + ballModel.speedY * elapsedTimeSeconds;
 
 
-            if (ballModel.YPosition + ballModel.diameter / 2 > 1.0f)
+            if (ballModel.YPosition + ballModel.diameter / 2 > height)
             {
                 ballModel.speedY = ballModel.speedY * -1.0f;
             }
 
-            if (ballModel.YPosition - ballModel.diameter / 2 < 0)
+            if (ballModel.YPosition - ballModel.diameter / 2 < 0.0f)
             {
                 ballModel.speedY = ballModel.speedY * -1.0f;
             }

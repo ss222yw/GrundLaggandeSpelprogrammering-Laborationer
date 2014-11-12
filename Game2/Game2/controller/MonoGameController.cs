@@ -52,7 +52,7 @@ namespace Game2.controller
           //  Camera camera = new Camera(GraphicsDevice.Viewport.Width,GraphicsDevice.Viewport.Height);
             m_ballView = new BallView(GraphicsDevice, Content);
 
-            ballSumlation = new BallSimulation(GraphicsDevice.Viewport);
+            ballSumlation = new BallSimulation();
 
 
         }
@@ -93,7 +93,7 @@ namespace Game2.controller
             
             // TODO: Add your drawing code here
             m_ballView.drawBall(ballSumlation);
-            m_ballView.drawFramWall();
+            m_ballView.drawFramWall(GraphicsDevice);
             base.Draw(gameTime);
         }
     }

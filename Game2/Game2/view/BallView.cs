@@ -14,37 +14,32 @@ namespace Game2.view
         private SpriteBatch m_spriteBatch;
         private Texture2D m_ballTexture;
         private Camera camera;
-        private int m_windowWidth;
-        private int m_windowHeight;
         private Texture2D m_frameWall;
         private BallSimulation ballSimulation;
+        private int borderWidth = 1;
+ 
         
 
         public BallView(GraphicsDevice graphicsDevice, ContentManager content)
         {
 
             camera = new Camera(graphicsDevice.Viewport);
-            ballSimulation = new BallSimulation(graphicsDevice.Viewport);
-            m_windowWidth = graphicsDevice.Viewport.Width;
-            m_windowHeight = graphicsDevice.Viewport.Height;
-       
+            ballSimulation = new BallSimulation();
             m_spriteBatch = new SpriteBatch(graphicsDevice);
-
             m_ballTexture = content.Load<Texture2D>("Ball");
-
-            m_frameWall = content.Load<Texture2D>("Wall");
+            
         }
 
       
 
         internal void drawBall(BallSimulation ballSimulation)
         {
-            //int visualX = (int)(ballSimulation.getPositionX() * m_windowWidth);
-            //int visualY = (int)(ballSimulation.getPostionY() * m_windowHeight);
+
             int visualX = (int) (camera.toViewX(ballSimulation.getPositionX()));
             int visualY = (int) (camera.toViewY(ballSimulation.getPostionY()));
             int ballSize = (int)(ballSimulation.getBallDiameter() * camera.getScale());
-            //int ballSize = 80;
+
+
             Rectangle destrect = new Rectangle(visualX - (ballSize / 2), visualY - ballSize / 2, ballSize, ballSize);
            
             m_spriteBatch.Begin();
@@ -53,15 +48,31 @@ namespace Game2.view
         }
 
 
-        internal void drawFramWall()
+
+
+        internal void drawFramWall(GraphicsDevice graphicsDevice)
         {
          
-           //TODO:: komma på bättre sätt för att lösa detta istället för hårdkodning!!!!!!!
-           // int scale = (int)camera.getScale();
-            Rectangle rec = new Rectangle( -35,-35, m_windowWidth - 250, m_windowHeight + 80);
+            int scale = (int)camera.getScale();
+            var borderColor = Color.White;
+            int Frame = camera.getFrame();
+
+            m_frameWall = new Texture2D(graphicsDevice, 1, 1);
+            m_frameWall.SetData(new Color[] { borderColor });
+
+
+            Rectangle recTop = new Rectangle(Frame, Frame, scale, borderWidth);
+            Rectangle recRight = new Rectangle(Frame + scale, Frame, borderWidth, scale);
+            Rectangle recLeft = new Rectangle(Frame, Frame, borderWidth, scale);
+            Rectangle recBottom = new Rectangle(Frame, scale + Frame, scale, borderWidth);
+
             m_spriteBatch.Begin();
-            m_spriteBatch.Draw(m_frameWall, rec, Color.White);
-            m_spriteBatch.End();
+            m_spriteBatch.Draw(m_frameWall, recTop, borderColor);
+            m_spriteBatch.Draw(m_frameWall, recRight, borderColor);
+            m_spriteBatch.Draw(m_frameWall, recLeft, borderColor);
+            m_spriteBatch.Draw(m_frameWall, recBottom, borderColor);
+            m_spriteBatch.End();  
+            
         }
     }
 }   

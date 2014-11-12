@@ -11,9 +11,7 @@ namespace Game2.model
         public float diameter = 0.1f;
         public float XPosition = 0.5f;
         public float YPosition = 0.9f;
-        public float speedX = 0.5f;
-        public float speedY = 1.2f;
-        public float LogicalX = 1.0f;
-        public float LogicalY = 1.0f;
+        public float speedX = 0.6f;
+        public float speedY = 0.9f;
     }
 }

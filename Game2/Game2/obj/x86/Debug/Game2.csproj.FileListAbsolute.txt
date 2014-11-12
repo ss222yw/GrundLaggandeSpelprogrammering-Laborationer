@@ -48,3 +48,5 @@ C:\Users\Sahib\documents\visual studio 2010\Projects\Game2\Game2\bin\Windows\Deb
 C:\Users\Sahib\documents\visual studio 2010\Projects\Game2\Game2\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Sahib\documents\visual studio 2010\Projects\Game2\Game2\bin\Windows\Debug\Content\Ball.png
 C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game2\Game2\bin\Windows\Debug\Content\Wall.gif
+C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game2\Game2\bin\Windows\Debug\Content\plong1.wav
+C:\Users\Sahib\documents\visual studio 2010\Projects\Game2\Game2\obj\x86\Debug\Game2.csprojResolveAssemblyReference.cache
