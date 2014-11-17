@@ -24,10 +24,12 @@ namespace Game4.view
             }
         }
 
+        //, GraphicsDevice graphicsDevice
         internal void Draw(SpriteBatch m_spriteBatch, Camera camera, Texture2D m_SplitterTexture)
         {
             for (int i = 0; i < NUM_PARTICLES; i++)
             {
+                //, graphicsDevice.Viewport
                 splitterParticles[i].Draw(m_spriteBatch, camera, m_SplitterTexture);
             }
         }

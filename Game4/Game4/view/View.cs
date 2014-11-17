@@ -21,13 +21,14 @@ namespace Game4.view
             model = new Game4.model.Model();
             splitterSystem = new SplitterSystem(model.getStartPosition());
 
-            m_SplitterTexture = Content.Load<Texture2D>("Smoke");
+            m_SplitterTexture = Content.Load<Texture2D>("particlesmoke");
         }
 
+        //,GraphicsDevice graphicsDevice
         internal void draw(float gameTime)
         {
             splitterSystem.Update(gameTime);
-
+            //, graphicsDevice
             m_spriteBatch.Begin();
             splitterSystem.Draw(m_spriteBatch, camera, m_SplitterTexture);
             m_spriteBatch.End();

@@ -32,6 +32,7 @@ namespace Game4.view
             }
         }
 
+
         internal Microsoft.Xna.Framework.Rectangle translatRec(float x, float y, float p_3)
         {
             float vX = p_3 * scaleX;
