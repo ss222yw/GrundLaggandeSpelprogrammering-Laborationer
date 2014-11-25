@@ -71,6 +71,7 @@ namespace Game1.view
         internal void setDimensions(int width, int height)
         {
             //throw new NotImplementedException();
+           // viewport.width , viewport.height
 
             this.width = width;
             this.height = height;
@@ -84,7 +85,7 @@ namespace Game1.view
                 scale = scaleY;
             }
 
-            // resultat för uppgift 3 är 16.
+            // resultat för uppgift 3 är 14.
         }
 
 

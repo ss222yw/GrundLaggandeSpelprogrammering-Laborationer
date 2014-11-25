@@ -22,11 +22,15 @@ namespace Game2.view
 
         public BallView(GraphicsDevice graphicsDevice, ContentManager content)
         {
-
             camera = new Camera(graphicsDevice.Viewport);
             ballSimulation = new BallSimulation();
             m_spriteBatch = new SpriteBatch(graphicsDevice);
             m_ballTexture = content.Load<Texture2D>("Ball");
+            
+        }
+
+        internal void drawParticle()
+        {
             
         }
 
@@ -41,13 +45,15 @@ namespace Game2.view
 
 
             Rectangle destrect = new Rectangle(visualX - (ballSize / 2), visualY - ballSize / 2, ballSize, ballSize);
-           
+
+
             m_spriteBatch.Begin();
             m_spriteBatch.Draw(m_ballTexture, destrect, Color.Silver);
             m_spriteBatch.End();
+
+
+
         }
-
-
 
 
         internal void drawFramWall(GraphicsDevice graphicsDevice)
@@ -74,5 +80,6 @@ namespace Game2.view
             m_spriteBatch.End();  
             
         }
+
     }
 }   

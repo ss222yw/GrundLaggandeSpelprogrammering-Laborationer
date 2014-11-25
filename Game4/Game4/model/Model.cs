@@ -17,6 +17,7 @@ namespace Game4.model
         public float endValue = 0.0f;
         public float totalTime = 0;
         public float MaxTime = 6.0f;
+        public float a_rotation = 0;
 
         internal Vector2 getStartPosition()
         {

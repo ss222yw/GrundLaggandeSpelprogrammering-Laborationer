@@ -13,5 +13,6 @@ namespace Game2.model
         public float YPosition = 0.9f;
         public float speedX = 0.6f;
         public float speedY = 0.9f;
+
     }
 }

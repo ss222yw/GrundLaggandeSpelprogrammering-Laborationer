@@ -19,11 +19,15 @@ namespace Game2.controller
         BallSimulation ballSumlation;
 
 
+
+
         public MonoGameController()
             : base()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferWidth = 400;
+            graphics.PreferredBackBufferHeight = 400;
         }
 
         /// <summary>

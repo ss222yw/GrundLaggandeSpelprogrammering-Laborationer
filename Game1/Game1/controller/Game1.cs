@@ -45,8 +45,8 @@ namespace Game1
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            camera = new Camera(7,7);
-            camera.setDimensions(320,240);
+            camera = new Camera(8,8);
+            camera.setDimensions(120,150);
             camera.RenderBlack();
             camera.RenderWhite();
             camera.GetScale();

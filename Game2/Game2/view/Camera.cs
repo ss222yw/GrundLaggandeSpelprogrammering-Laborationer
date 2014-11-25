@@ -20,8 +20,8 @@ namespace Game2.view
 
         public Camera(Viewport port)
         {
-            scaleX = port.Width - frame * 2;
-            scaleY = port.Height - frame * 2;
+            scaleX = (port.Width) - frame * 2;
+            scaleY = (port.Height) - frame * 2;
 
            
 

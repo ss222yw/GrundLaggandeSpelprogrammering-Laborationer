@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework;
 
 namespace Game4.view
 {
@@ -43,6 +44,8 @@ namespace Game4.view
 
             return new Microsoft.Xna.Framework.Rectangle(screenX, screenY, (int)(vX * 1f), (int)(vY * 1f));
         }
+
+   
     }
     
 }

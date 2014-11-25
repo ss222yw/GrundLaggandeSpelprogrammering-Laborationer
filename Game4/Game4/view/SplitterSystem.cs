@@ -41,10 +41,8 @@ namespace Game4.view
             for (int i = 0; i < NUM_PARTICLES; i++)
             {
                 splitterParticles[i].Update(gameTime);
-            }
-       
+            }  
           
         }
     }
-    
 }

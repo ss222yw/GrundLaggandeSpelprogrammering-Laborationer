@@ -11,7 +11,7 @@ namespace Game3.model
         public float XPosition = 0.5f;
         public float YPosition = 0.6f;
 
-        public float maxSpeed = 0.2f;
+        public float maxSpeed = 0.3f;
 
         internal Vector2 getStartPosition()
         {
