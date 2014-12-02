@@ -28,3 +28,7 @@ C:\Users\Sahib\documents\visual studio 2010\Projects\Game6\Game6\obj\x86\Debug\G
 C:\Users\Sahib\documents\visual studio 2010\Projects\Game6\Game6\obj\x86\Debug\Game6.pdb
 C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game6\Game6\bin\Windows\Debug\Content\explosion2.png
 C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game6\Game6\bin\Windows\Debug\Content\Background.jpg
+C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game6\Game6\bin\Windows\Debug\Content\snow.png
+C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game6\Game6\bin\Windows\Debug\Content\happy.png
+C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game6\Game6\bin\Windows\Debug\Content\snowWhite.jpg
+C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game6\Game6\bin\Windows\Debug\Content\test.gif

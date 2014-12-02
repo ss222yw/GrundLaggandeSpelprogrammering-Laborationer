@@ -9,7 +9,7 @@ namespace Game5.view
     class Explosion
     {
         private float timeElapsed = 0;
-        private float maxTime = 3.0f;
+        private float maxTime = 1.0f;
         private int numberOfFrames = 24;
         private float percent;
         private int frame;

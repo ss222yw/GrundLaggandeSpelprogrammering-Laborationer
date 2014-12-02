@@ -17,8 +17,8 @@ namespace Game6.model
         public float XPositionSmoke = 0.5f;
         public float YPositionSmoke = 0.5f;
         public float maxSpeedSmoke = 1.0f;
-        public float minSizeSmoke = 2.5f;
-        public float maxSizeSmoke = 3.0f;
+        public float minSizeSmoke = 0.1f;
+        public float maxSizeSmoke = 2.0f;
         public float startValueSmoke = 0.5f;
         public float endValueSmoke = 0.0f;
         public float totalTimeSmoke = 0;
@@ -44,6 +44,24 @@ namespace Game6.model
         public float XPositionFire = 250.0f;
         public float YPositionFire = 60.0f;
 
+        
+        public float XPositionStar = 0.5f;
+        public float YPositionStar = 0.0f;
+        public float maxSpeedStar = 3.5f;
+        public float minSizeStar = 0.04f;
+        public float maxSizeStar = 0.04f;
+        public float startValueStar = 1.0f;
+        public float endValueStar = 0.0f;
+        public float totalTimeStar = 0;
+        public float MaxTimeStar = 6.0f;
+
+        public float XPositionNew = 0.5f;
+        public float YPositionNew = 0.5f;
+        public float minSizeNew =  0.04f;
+        public float maxSizeNew = 0.04f;
+        public float totalTimeNew = 0;
+        public float MaxTimeNew = 6.0f;
+
         internal Vector2 getStartPosition()
         {
             return new Vector2(XPosition, YPosition);
@@ -57,6 +75,16 @@ namespace Game6.model
         internal Vector2 getStartPositionSmoke()
         {
             return new Vector2(XPositionSmoke, YPositionSmoke);
+        }
+
+        internal Vector2 getStartPositionStar()
+        {
+            return new Vector2(XPositionStar, YPositionStar);
+        }
+
+        internal Vector2 getStartPositionNew()
+        {
+            return new Vector2(XPositionNew, YPositionNew);
         }
     }
 }

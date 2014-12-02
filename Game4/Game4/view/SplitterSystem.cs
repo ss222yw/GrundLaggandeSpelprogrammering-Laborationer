@@ -9,40 +9,60 @@ namespace Game4.view
 {
     class SplitterSystem
     {
-        private SplitterParticle[] splitterParticles;
-        private const int NUM_PARTICLES = 100;
+        private List<SplitterParticle> splitterParticles = new List<SplitterParticle>();
+        private const float NUM_PARTICLES = 100;
+        private float totalTime = 0;
+        private float delayTimeSeconds = 0;
+        private Camera camera;
+        private float MaxTime = 3.0f;
 
 
-
-        public SplitterSystem(Vector2 systemModelStartPosition)
+        public SplitterSystem(Viewport viewPort)
         {
-            splitterParticles = new SplitterParticle[NUM_PARTICLES];
-
-            for (int i = 0; i < NUM_PARTICLES; i++)
-            {
-                splitterParticles[i] = new SplitterParticle(i, systemModelStartPosition);
-            }
-        }
-
-        //, GraphicsDevice graphicsDevice
-        internal void Draw(SpriteBatch m_spriteBatch, Camera camera, Texture2D m_SplitterTexture)
-        {
-            for (int i = 0; i < NUM_PARTICLES; i++)
-            {
-                //, graphicsDevice.Viewport
-                splitterParticles[i].Draw(m_spriteBatch, camera, m_SplitterTexture);
-            }
+            Random rand = new Random();
+            delayTimeSeconds = (float)(rand.NextDouble()) * 0.1f;
+            camera = new Camera(viewPort);
         }
 
         internal void Update(float gameTime)
         {
+             totalTime += gameTime;
 
-            
-            for (int i = 0; i < NUM_PARTICLES; i++)
+            if (totalTime >= delayTimeSeconds)
+            {   
+                totalTime = 0;
+
+                if (splitterParticles.Count < NUM_PARTICLES)
+                {
+                    splitterParticles.Add(new SplitterParticle());
+                }
+
+            }
+
+            for (int i = 0; i < splitterParticles.Count; i++)
             {
                 splitterParticles[i].Update(gameTime);
-            }  
-          
+
+                if (splitterParticles[i].IsLive())
+                {
+                    splitterParticles[i].rePlay();
+                }
+            }
+
+        }
+
+
+ 
+
+
+
+        internal void Draw(SpriteBatch spriteBatch, Texture2D m_SplitterTexture)
+        {
+            for (int i = 0; i < splitterParticles.Count; i++)
+            {
+                splitterParticles[i].Draw(spriteBatch, camera, m_SplitterTexture);
+            }
         }
     }
 }
+    

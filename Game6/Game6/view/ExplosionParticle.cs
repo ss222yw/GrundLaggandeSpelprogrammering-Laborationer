@@ -47,7 +47,7 @@ namespace Game6.view
             randomDirection = new Vector2((float)rand.NextDouble() - 0.5f, (float)rand.NextDouble() - 0.5f);
             randomDirection.Normalize();
             randomDirection = randomDirection * ((float)rand.NextDouble() * model.maxSpeedExpolsion);
-            acceleration = new Vector2(0, 0.09f);
+            acceleration = new Vector2(0, 0.3f);
             return systemStartPosition;
         }
 
@@ -55,7 +55,7 @@ namespace Game6.view
         {
            Rectangle destrect = camera.translatRec(position.X,position.Y,Size);
 
-           m_spriteBatch.Draw(m_SplitterTexture, destrect,Color.White);
+           m_spriteBatch.Draw(m_SplitterTexture, destrect,Color.Red);
         }
 
         internal void Update(float gameTime)

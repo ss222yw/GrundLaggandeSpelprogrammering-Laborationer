@@ -10,7 +10,7 @@ namespace Game6.view
     class SmokeSystem
     {
         private SmokeParticles[] splitterParticles;
-        private const int NUM_PARTICLES = 50;
+        private const int NUM_PARTICLES = 1;
 
 
 

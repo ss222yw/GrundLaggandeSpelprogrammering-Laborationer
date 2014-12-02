@@ -24,3 +24,5 @@ C:\Users\Sahib\documents\visual studio 2010\Projects\Game3\Game3\bin\Windows\Deb
 C:\Users\Sahib\documents\visual studio 2010\Projects\Game3\Game3\obj\x86\Debug\Game3.csprojResolveAssemblyReference.cache
 C:\Users\Sahib\documents\visual studio 2010\Projects\Game3\Game3\obj\x86\Debug\Game3.exe
 C:\Users\Sahib\documents\visual studio 2010\Projects\Game3\Game3\obj\x86\Debug\Game3.pdb
+C:\Users\Sahib\Documents\GitHub\GrundLaggandeSpelprogrammering-Laborationer\Game3\Game3\obj\x86\Debug\Game3.exe
+C:\Users\Sahib\Documents\GitHub\GrundLaggandeSpelprogrammering-Laborationer\Game3\Game3\obj\x86\Debug\Game3.pdb

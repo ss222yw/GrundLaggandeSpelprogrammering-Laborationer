@@ -51,3 +51,5 @@ C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game2\Game2\bin\Windows\Deb
 C:\Users\Sahib\Documents\Visual Studio 2010\Projects\Game2\Game2\bin\Windows\Debug\Content\plong1.wav
 C:\Users\Sahib\documents\visual studio 2010\Projects\Game2\Game2\obj\x86\Debug\Game2.csprojResolveAssemblyReference.cache
 C:\Users\Sahib\documents\visual studio 2010\Projects\Game2\Game2\bin\Windows\Debug\Content\spark.png
+C:\Users\Sahib\Documents\GitHub\GrundLaggandeSpelprogrammering-Laborationer\Game2\Game2\obj\x86\Debug\Game2.exe
+C:\Users\Sahib\Documents\GitHub\GrundLaggandeSpelprogrammering-Laborationer\Game2\Game2\obj\x86\Debug\Game2.pdb

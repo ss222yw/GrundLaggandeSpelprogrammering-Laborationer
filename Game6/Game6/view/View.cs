@@ -20,6 +20,11 @@ namespace Game6.view
         private Texture2D m_fireTexture;
         private Camera camera;
         private Vector2 size;
+        private StarSystem starSystem;
+        private NewSystem newSystem;
+        private Texture2D m_StarTexture;
+        private Texture2D m_NewTexture;
+
      
 
 
@@ -29,16 +34,21 @@ namespace Game6.view
             m_spriteBatch = new SpriteBatch(GraphicsDevice);
             model = new Game6.model.Model();
             splitterSystem = new SplitterSystem(model.getStartPosition());
+            starSystem = new StarSystem(model.getStartPositionStar());
+            newSystem = new NewSystem(model.getStartPositionNew());
             smokeSystem = new SmokeSystem(model.getStartPositionSmoke());
             explosionSystem = new ExplosionSystem(model.getStartPositionExplosion());
             model.timeElapsed = 0;
-            m_fireTexture = Content.Load<Texture2D>("explosion2");
-            model.imgSize = m_fireTexture.Width / model.numFramesX;
-            size = new Vector2(model.imgSize, model.imgSize);
 
             m_SplitterTexture = Content.Load<Texture2D>("particlesmoke");
-            m_SmokeTexture = Content.Load<Texture2D>("particlesmoke");
+            m_SmokeTexture = Content.Load<Texture2D>("happy");
             m_ExplosionTexture = Content.Load<Texture2D>("spark");
+            m_fireTexture = Content.Load<Texture2D>("explosion2");
+            m_NewTexture = Content.Load<Texture2D>("test");
+            m_StarTexture = Content.Load<Texture2D>("snowWhite");
+
+            model.imgSize = m_fireTexture.Width / model.numFramesX;
+            size = new Vector2(model.imgSize, model.imgSize);
             
         }
 
@@ -49,17 +59,21 @@ namespace Game6.view
             smokeSystem.Update(gameTime);
             explosionSystem.Update(gameTime);
             Update(gameTime);
+            starSystem.Update(gameTime);
+            newSystem.Update(gameTime);
 
             int visualX;
             int visualY;
             rePlay(out visualX, out visualY);
             int x = (int)model.XPositionFire;
             int y = (int)model.YPositionFire;
-            Rectangle destrect = new Rectangle(x, y, 300, 300);
+            Rectangle destrect = new Rectangle(x, y, 330, 330);
             Rectangle sourceRectangle = new Rectangle(visualX, visualY, (int)size.X, (int)size.Y);
            
             m_spriteBatch.Begin();
             splitterSystem.Draw(m_spriteBatch, camera, m_SplitterTexture);
+            starSystem.Draw(m_spriteBatch, camera, m_StarTexture);
+            newSystem.Draw(m_spriteBatch, camera, m_NewTexture);
             smokeSystem.Draw(m_spriteBatch, camera, m_SmokeTexture, graphicsDevice);
             explosionSystem.Draw(m_spriteBatch, camera, m_ExplosionTexture);
             m_spriteBatch.Draw(m_fireTexture, destrect, sourceRectangle, Color.White);

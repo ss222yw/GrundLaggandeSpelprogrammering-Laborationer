@@ -2,25 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Game6.view
 {
-    class SplitterSystem
+    class StarSystem
     {
-        private SplitterParticle[] splitterParticles;
+        private StarParticle[] starParticles;
         private const int NUM_PARTICLES = 100;
 
 
 
-        public SplitterSystem(Vector2 systemModelStartPosition)
+        public StarSystem(Vector2 systemModelStartPosition)
         {
-            splitterParticles = new SplitterParticle[NUM_PARTICLES];
+            starParticles = new StarParticle[NUM_PARTICLES];
 
             for (int i = 0; i < NUM_PARTICLES; i++)
             {
-                splitterParticles[i] = new SplitterParticle(i, systemModelStartPosition);
+                starParticles[i] = new StarParticle(i, systemModelStartPosition);
             }
         }
 
@@ -28,7 +28,7 @@ namespace Game6.view
         {
             for (int i = 0; i < NUM_PARTICLES; i++)
             {
-                splitterParticles[i].Draw(m_spriteBatch, camera, m_SplitterTexture);
+                starParticles[i].Draw(m_spriteBatch, camera, m_SplitterTexture);
             }
         }
 
@@ -37,7 +37,7 @@ namespace Game6.view
 
             for (int i = 0; i < NUM_PARTICLES; i++)
             {
-                splitterParticles[i].Update(gameTime);
+                starParticles[i].Update(gameTime);
             }
 
 

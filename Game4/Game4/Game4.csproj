@@ -42,7 +42,6 @@
     <Compile Include="view\Camera.cs" />
     <Compile Include="view\SplitterParticle.cs" />
     <Compile Include="view\SplitterSystem.cs" />
-    <Compile Include="view\View.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

@@ -97,7 +97,7 @@ namespace Game6.view
                   Vector2 screenCenter = new Vector2(graphicsDevice.Viewport.Width / 2f, graphicsDevice.Viewport.Height / 2f);
                   Vector2 imageCenter = new Vector2(m_SmokeTexture.Width / 2f, m_SmokeTexture.Height / 2f);
 
-                  m_spriteBatch.Draw(m_SmokeTexture, screenCenter,r , color, -5, imageCenter, Size, SpriteEffects.None, 0);
+                  m_spriteBatch.Draw(m_SmokeTexture, screenCenter,r , color, -50, imageCenter, Size, SpriteEffects.None, 0);
            
             }
         }

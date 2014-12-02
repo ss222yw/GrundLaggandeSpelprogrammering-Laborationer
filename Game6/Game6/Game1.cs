@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Game4.view;
+using Game6.view;
 
-namespace Game4
+namespace Game6
 {
     /// <summary>
     /// This is the main type for your game
@@ -12,15 +12,14 @@ namespace Game4
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D m_SplitterTexture;
-        SplitterSystem spSystem;
+        View view;
+        private Texture2D m_background;
 
         public Game1()
             : base()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-          
         }
 
         /// <summary>
@@ -44,9 +43,10 @@ namespace Game4
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            m_SplitterTexture = Content.Load<Texture2D>("particlesmoke");
+            m_background = Content.Load<Texture2D>("Background");
+
             // TODO: use this.Content to load your game content here
-            spSystem = new SplitterSystem(GraphicsDevice.Viewport);
+            view = new View(GraphicsDevice, Content);
         }
 
         /// <summary>
@@ -56,7 +56,6 @@ namespace Game4
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
-           
         }
 
         /// <summary>
@@ -70,7 +69,7 @@ namespace Game4
                 Exit();
 
             // TODO: Add your update logic here
-            spSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+
             base.Update(gameTime);
         }
 
@@ -80,11 +79,9 @@ namespace Game4
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Silver);
-
+            GraphicsDevice.Clear(Color.Black);
             // TODO: Add your drawing code here
-            //,GraphicsDevice
-            spSystem.Draw(spriteBatch, m_SplitterTexture);
+            view.draw((float)gameTime.ElapsedGameTime.TotalSeconds, GraphicsDevice);
             base.Draw(gameTime);
         }
     }
