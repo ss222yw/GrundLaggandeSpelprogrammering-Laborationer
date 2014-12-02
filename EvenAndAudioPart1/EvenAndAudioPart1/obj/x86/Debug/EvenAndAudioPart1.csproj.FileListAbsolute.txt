@@ -1,0 +1,60 @@
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\obj\x86\Debug\EvenAndAudioPart1.csprojResolveAssemblyReference.cache
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\EvenAndAudioPart1.exe
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\EvenAndAudioPart1.pdb
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\MonoGame.Framework.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\obj\x86\Debug\EvenAndAudioPart1.exe
+C:\Users\Sahib\AppData\Local\Temporary Projects\EvenAndAudioPart1\obj\x86\Debug\EvenAndAudioPart1.pdb
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\obj\x86\Debug\EvenAndAudioPart1.exe
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\obj\x86\Debug\EvenAndAudioPart1.pdb
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\Background.jpg
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\Ball.png
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\explosion.png
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\explosion2.png
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\particlesmoke.png
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\spark.png
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\EvenAndAudioPart1.exe
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\EvenAndAudioPart1.pdb
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\MonoGame.Framework.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Sahib\documents\visual studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\obj\x86\Debug\EvenAndAudioPart1.csprojResolveAssemblyReference.cache
+C:\Users\Sahib\Documents\Visual Studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\circle.png
+C:\Users\Sahib\Documents\Visual Studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\GoodJob.png
+C:\Users\Sahib\Documents\Visual Studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\maybe.jpg
+C:\Users\Sahib\Documents\Visual Studio 2010\Projects\EvenAndAudioPart1\EvenAndAudioPart1\bin\Windows\Debug\Content\fire.xnb
